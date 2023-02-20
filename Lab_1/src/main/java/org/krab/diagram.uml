@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-21.0" y="116.0">org.krab.enums.TypeDoor</node>
+    <node x="-244.5" y="116.0">org.krab.enums.StatusDoor</node>
+    <node x="-558.0" y="28.0">org.krab.Window</node>
+    <node x="-79.0" y="556.0">org.krab.enums.MaterialWindow</node>
+    <node x="-787.5" y="105.0">org.krab.enums.SizeWindow</node>
+    <node x="-483.5" y="589.5">org.krab.Main</node>
+    <node x="-789.0" y="402.0">org.krab.Home</node>
+    <node x="-316.0" y="424.0">org.krab.Door</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Compact" zoom="0.7825059101654847" showDependencies="false" x="-303.0" y="451.0" />
+  <SelectedNodes>
+    <node>org.krab.Main</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
