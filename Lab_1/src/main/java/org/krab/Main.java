@@ -29,6 +29,6 @@ public class Main {
 
         myHome1.closeDoors();
         System.out.println(myHome1.toString());
-
+        System.out.println(myHome1.toString());
     }
 }
