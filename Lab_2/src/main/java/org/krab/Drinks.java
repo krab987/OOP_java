@@ -2,23 +2,41 @@ package org.krab;
 
 import org.krab.enums.PackageDrink;
 
-import java.util.Calendar;
+import java.util.GregorianCalendar;
 
-public class Drinks {
+abstract class Drinks {
     private String name;
     private String manufacturer;
 
     private PackageDrink packageDrink;
     private int price;
-    private Calendar dateManufacturer;
-    private int shelfLife;
+    private GregorianCalendar dateManufacturer;
+    private int shelfLifeMonthes;
+
+    public Drinks (String name, String manufacturer, PackageDrink packageDrink, int price, GregorianCalendar dateManufacturer, int shelfLifeMonthes){
+        this.name=name;
+        this.manufacturer=manufacturer;
+        this.packageDrink=packageDrink;
+        this.price=price;
+        this.dateManufacturer=dateManufacturer;
+        this.shelfLifeMonthes = shelfLifeMonthes;
+    }
+
+
+    public String checkShelfLife (int shelfLife, GregorianCalendar dateManufacturer){
+        String res = "overdue"; // прострочений
+
+        dateManufacturer.set(dateManufacturer.MONTH, dateManufacturer.MONTH + shelfLife);
+        if(dateManufacturer.compareTo(GregorianCalendar.getInstance()) > 0){
+            res = "appropriate";
+        }
+
+        return res;
+    }
+
 
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getManufacturer() {
@@ -28,21 +46,6 @@ public class Drinks {
     public void setManufacturer(String manufacturer) {
         this.manufacturer = manufacturer;
     }
-
-
-
-    private String checkShelfLife (int shelfLife, Calendar dateManufacturer){
-        String res = "overdue"; // прострочений
-
-        dateManufacturer.roll(dateManufacturer.MONTH, + shelfLife);
-        if(dateManufacturer.compareTo(Calendar.getInstance()) < 0){
-            res = "appropriate";
-        }
-
-        return res;
-    }
-
-
     public PackageDrink getPackageDrink() {
         return packageDrink;
     }
@@ -59,19 +62,19 @@ public class Drinks {
         this.price = price;
     }
 
-    public Calendar getDateManufacturer() {
+    public GregorianCalendar getDateManufacturer() {
         return dateManufacturer;
     }
 
-    public void setDateManufacturer(Calendar dateManufacturer) {
+    public void setDateManufacturer(GregorianCalendar dateManufacturer) {
         this.dateManufacturer = dateManufacturer;
     }
 
-    public int getShelfLife() {
-        return shelfLife;
+    public int getShelfLifeMonthes() {
+        return shelfLifeMonthes;
     }
 
-    public void setShelfLife(int shelfLife) {
-        this.shelfLife = shelfLife;
+    public void setShelfLifeMonthes(int shelfLifeMonthes) {
+        this.shelfLifeMonthes = shelfLifeMonthes;
     }
 }
