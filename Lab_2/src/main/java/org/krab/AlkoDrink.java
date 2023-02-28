@@ -18,7 +18,7 @@ public class AlkoDrink extends Drinks{
 
     private void setTypeAlcoDrink(int concentration) {
         if(concentration <6) typeAlcoDrink = TypeAlcoDrink.light;
-        else if(concentration > 40) typeAlcoDrink = TypeAlcoDrink.hard;
+        else if(concentration > 39) typeAlcoDrink = TypeAlcoDrink.hard;
         else typeAlcoDrink=TypeAlcoDrink.medium;
     }
 
@@ -27,7 +27,20 @@ public class AlkoDrink extends Drinks{
         return "Alcodrink "+ super.getName()+"\n Manufacturer: "+super.getManufacturer()+ "\n Pacage: "+getPackageDrink()+
                 "\n dateManufacturer: "+super.getDateManufacturer().getTime()+ "\n Self life in monthes: "+super.getShelfLifeMonthes()+
                 "\n To drink: "+checkShelfLife(super.getShelfLifeMonthes(),super.getDateManufacturer())+
-                "\n Concentration in %: "+concentration+ "\n TypeAlcoDrink=" + typeAlcoDrink;
+                "\n Concentration in %: "+concentration+ "\n TypeAlcoDrink: " + typeAlcoDrink;
+    }
+    @Override
+    public int hashCode(){
+//        return 10 * typeAlcoDrink.hashCode();
+        return 10 * super.getName().hashCode();
+    }
+    @Override
+    public boolean equals(Object obj){
+
+        if (!(obj instanceof AlkoDrink)) return false;
+
+        AlkoDrink alc = (AlkoDrink)obj;
+        return this.getName().equals(alc.getName());
     }
 
     public TypeAlcoDrink getTypeAlcoDrink() {
