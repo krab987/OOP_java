@@ -4,7 +4,10 @@ import org.krab.enums.PackageDrink;
 
 import java.util.GregorianCalendar;
 
-abstract class Drinks {
+/**
+ * Represents abstract class of drinks
+ */
+abstract class Drinks implements IDrinkable{
     private String name;
     private String manufacturer;
 
@@ -12,7 +15,17 @@ abstract class Drinks {
     private int price;
     private GregorianCalendar dateManufacturer;
     private int shelfLifeMonthes;
+    boolean drinked;
 
+    /**
+     * Create drink with given values
+     * @param name name of the drink
+     * @param manufacturer manufacturer of the drink
+     * @param packageDrink package of the drink (glass, plastic ect)
+     * @param price price of the drink
+     * @param dateManufacturer date when product was produced
+     * @param shelfLifeMonthes how many monthes product will live
+     */
     public Drinks (String name, String manufacturer, PackageDrink packageDrink, int price, GregorianCalendar dateManufacturer, int shelfLifeMonthes){
         this.name=name;
         this.manufacturer=manufacturer;
@@ -20,9 +33,22 @@ abstract class Drinks {
         this.price=price;
         this.dateManufacturer=dateManufacturer;
         this.shelfLifeMonthes = shelfLifeMonthes;
+        drinked = false;
     }
 
+    /**
+     * Drink the product
+     */
+    public void drink(){
+        drinked = true;
+    }
 
+    /**
+     * Check overdue product or not
+     * @param shelfLife how many monthes product will live
+     * @param dateManufacturer date when product was produced
+     * @return message overdue or appropriate
+     */
     public String checkShelfLife (int shelfLife, GregorianCalendar dateManufacturer){
         String res = "overdue"; // прострочений
 
@@ -34,47 +60,41 @@ abstract class Drinks {
         return res;
     }
 
-
+    /**
+     * Gets name
+     * @return name
+     */
     public String getName() {
         return name;
     }
-
+    /**
+     * Gets manufacturer
+     * @return manufacturer
+     */
     public String getManufacturer() {
         return manufacturer;
     }
-
-    public void setManufacturer(String manufacturer) {
-        this.manufacturer = manufacturer;
-    }
+    /**
+     * Gets packageDrink
+     * @return packageDrink
+     */
     public PackageDrink getPackageDrink() {
         return packageDrink;
     }
-
-    public void setPackageDrink(PackageDrink packageDrink) {
-        this.packageDrink = packageDrink;
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
+    /**
+     * Gets dateManufacturer
+     * @return dateManufacturer
+     */
     public GregorianCalendar getDateManufacturer() {
         return dateManufacturer;
     }
-
-    public void setDateManufacturer(GregorianCalendar dateManufacturer) {
-        this.dateManufacturer = dateManufacturer;
-    }
-
+    /**
+     * Gets shelfLifeMonthes
+     * @return shelfLifeMonthes
+     */
     public int getShelfLifeMonthes() {
         return shelfLifeMonthes;
     }
 
-    public void setShelfLifeMonthes(int shelfLifeMonthes) {
-        this.shelfLifeMonthes = shelfLifeMonthes;
-    }
+
 }

@@ -3,36 +3,35 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="71.10841796763714" y="77.23105885253452">org.krab.enums.PackageDrink</node>
-    <node x="-77.95694152950452" y="-44.40342935342966">org.krab.Main</node>
-    <node x="-264.13637978053464" y="171.651433534029">org.krab.Drinks</node>
-    <node x="202.52432859176207" y="403.21229692901716">org.krab.NonAlckoDrink</node>
-    <node x="203.42346085408514" y="226.80704727294125">org.krab.enums.Gasification</node>
-    <node x="-218.44079737907214" y="446.74758495352535">org.krab.AlkoDrink</node>
-    <node x="-351.0218387491284" y="29.555282114532666">org.krab.enums.TypeAlcoDrink</node>
+    <node x="-332.0" y="92.0">org.krab.AlkoDrink</node>
+    <node x="-619.9464033850494" y="-195.5">org.krab.enums.PackageDrink</node>
+    <node x="-629.9464033850494" y="54.17559943582512">org.krab.enums.TypeAlcoDrink</node>
+    <node x="-150.5" y="-243.0">org.krab.Drinks</node>
+    <node x="237.0" y="114.0">org.krab.NonAlckoDrink</node>
+    <node x="-614.9464033850494" y="-70.66220028208744">org.krab.enums.Gasification</node>
   </nodes>
   <notes />
   <edges>
     <edge source="org.krab.AlkoDrink" target="org.krab.Drinks" relationship="GENERALIZATION">
-      <point x="-2.0262092786538233E-4" y="-49.49958495352536" />
-      <point x="-44.441" y="414.0" />
-      <point x="-86.63629327610872" y="414.0" />
-      <point x="8.65044259228398E-5" y="93.49991982791664" />
+      <point x="0.0" y="-94.0" />
+      <point x="-158.0" y="18.5" />
+      <point x="27.0" y="18.5" />
+      <point x="0.0" y="105.0" />
     </edge>
     <edge source="org.krab.NonAlckoDrink" target="org.krab.Drinks" relationship="GENERALIZATION">
-      <point x="-172.00032859176207" y="1.5357030709828337" />
-      <point x="147.059" y="454.248" />
-      <point x="147.059" y="414.0" />
-      <point x="-86.63629327610872" y="414.0" />
-      <point x="8.65044259228398E-5" y="93.49991982791664" />
+      <point x="0.0" y="-61.0" />
+      <point x="409.0" y="25.5" />
+      <point x="27.0" y="25.5" />
+      <point x="0.0" y="105.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Compact" zoom="1.1440261865793782" showDependencies="false" x="172.9999999999999" y="260.49999999999994" />
+  <settings layout="Hierarchic Compact" zoom="1.0" showDependencies="false" x="75.0" y="61.0" />
   <SelectedNodes>
-    <node>org.krab.Main</node>
+    <node>org.krab.Drinks</node>
   </SelectedNodes>
   <Categories>
     <Category>Constructors</Category>
+    <Category>Methods</Category>
     <Category>Properties</Category>
   </Categories>
   <SCOPE>All</SCOPE>

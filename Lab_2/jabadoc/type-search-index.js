@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"org.krab","l":"AlkoDrink"},{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"org.krab.enums","l":"Gasification"},{"p":"org.krab","l":"IDrinkable"},{"p":"org.krab","l":"Main"},{"p":"org.krab","l":"NonAlckoDrink"},{"p":"org.krab.enums","l":"PackageDrink"},{"p":"org.krab.enums","l":"TypeAlcoDrink"}];updateSearchResults();
