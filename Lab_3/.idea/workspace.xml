@@ -4,16 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2842904-6f29-457d-b8de-f526864e9463" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="f2842904-6f29-457d-b8de-f526864e9463" name="Changes" comment="created 3 lab">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/krab/enums/Gasification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/krab/enums/PackageDrink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/krab/enums/TypeAlcoDrink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/krab/interfaces/IAlco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/krab/interfaces/IDrinkable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/krab/interfaces/INonAlco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/krab/module/AlcoDrink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/krab/module/Drinks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/krab/module/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/krab/module/NonAlckoDrink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/krab/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -31,10 +56,20 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "W:/projects/Jaba/OOP_Java/Lab_3/src/main/java/org/krab/module",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\projects\Jaba\OOP_Java\Lab_3\src\main\java\org\krab" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -43,8 +78,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678646276540</updated>
-      <workItem from="1678646277969" duration="3000" />
+      <workItem from="1678646277969" duration="1611000" />
     </task>
+    <task id="LOCAL-00001" summary="created 3 lab">
+      <created>1678646336313</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678646336313</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="created 3 lab" />
+    <option name="LAST_COMMIT_MESSAGE" value="created 3 lab" />
   </component>
 </project>
